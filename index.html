@@ -776,7 +776,36 @@
         Thanks for coming to MyWebsite
       </div>
     </div>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1Sp8kgCVAF-g-JUW4CeS_xAkxO2oNRjI&ehbc=2E312F" width="640" height="480"></iframe>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+
+    <style>
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .map-container iframe {
+            width: 640px;
+            height: 480px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1Sp8kgCVAF-g-JUW4CeS_xAkxO2oNRjI&ehbc=2E312F&noprof=1"
+            width="640" 
+            height="480">
+        </iframe>
+    </div>
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
